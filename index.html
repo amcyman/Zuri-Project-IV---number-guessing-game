@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #f2f2f2;
+                }
+
+        body button {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        main h1 {
+            font-size: 1.5rem;
+            font-weight: 300px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            text-transform: uppercase;
+            text-wrap:pretty;
+            width: 21rem;
+            text-align: center;
+            font-style: italic;
+        }
+        main h1 span{
+            color: rgb(179, 19, 101);
+            font-style: normal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body input {
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            scroll-behavior: smooth;
+            box-shadow: 1px 2px 4px .2px #000000;
+            
+        }
+
+        .feedback-message{
+            font-size: large;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .reset-btn{
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            background-color: rgb(179, 19, 101);
+            font-style: italic;
+        }
+
+        .input-div{
+            
+            margin:0;
+        }
+
+        .number-input{
+            display: block;
+            align-content: center;
+        }
+
+        body main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: hsl(182, 88%, 73%);
+            border-radius: 10px;
+            box-shadow: 1px 2px 4px.2px #000000;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+
+        main div {
+            justify-content: center;
+            row-gap: 55em;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <main>
+        <h1>Guess a number between <span>1 - 100</span></h1>
+        <div class="input-div">
+            <input type="number" class="number-input" id="display" />
+            <p class="feedback-message" style="text-align: center;"></p>
+        </div>
+        <div class="btn-div">
+            <button class="submit-btn">GUESS</button>
+            <button class="reset-btn" onclick="clearDisplay('Clear')">Clear</button>
+        </div>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
